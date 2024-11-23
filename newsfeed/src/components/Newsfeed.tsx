@@ -7,18 +7,7 @@ import { NewsfeedQuery } from "./__generated__/NewsfeedQuery.graphql";
 const NewsFeedQuery = graphql`
   query NewsfeedQuery {
     topStory {
-      title
-      summary
-      createdAt
-      poster {
-        name
-        profilePicture {
-          url
-        }
-      }
-      thumbnail {
-        url
-      }
+      ...StoryFragment
     }
   }
 `;
