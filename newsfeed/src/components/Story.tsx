@@ -18,7 +18,7 @@ const StoryFragment = graphql`
       ...PosterBylineFragment
     }
     thumbnail {
-      ...ImageFragment
+      ...ImageFragment @arguments(width: 400)
     }
   }
 `;
@@ -35,7 +35,7 @@ export default function Story({ story }: Props): React.ReactElement {
       <PosterByline poster={data.poster} />
       <Heading>{data.title}</Heading>
       <Timestamp time={data.createdAt} />
-      <Image image={data.thumbnail} width={400} height={400} />
+      <Image image={data.thumbnail} />
       <StorySummary summary={data.summary} />
     </Card>
   );

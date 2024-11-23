@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<fcb91f5e9c1f28bd792ec008d2ffae06>>
+ * @generated SignedSource<<b46378c6dd51dfd41e4b81de3ad073f6>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -44,7 +44,13 @@ const node: ReaderFragment = {
       "plural": false,
       "selections": [
         {
-          "args": null,
+          "args": [
+            {
+              "kind": "Literal",
+              "name": "width",
+              "value": 60
+            }
+          ],
           "kind": "FragmentSpread",
           "name": "ImageFragment"
         }
@@ -56,6 +62,6 @@ const node: ReaderFragment = {
   "abstractKey": "__isActor"
 };
 
-(node as any).hash = "57eabaafc04727fa968ac25327474c11";
+(node as any).hash = "8241bf48799a180d112be3d92929af46";
 
 export default node;
