@@ -6,6 +6,7 @@ import { ImageFragment$key } from "./__generated__/ImageFragment.graphql";
 const ImageFragment = graphql`
   fragment ImageFragment on Image {
     url
+    altText
   }
 `;
 
@@ -31,6 +32,7 @@ export default function Image({
       width={width}
       height={height}
       className={className}
+      alt={data.altText}
     />
   );
 }
