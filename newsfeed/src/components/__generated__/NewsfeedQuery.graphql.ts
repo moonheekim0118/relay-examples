@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<ef3947c5ca1b202591e710db140176c0>>
+ * @generated SignedSource<<e62f9373afa91e83fca52a6f9d59ef1f>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -120,6 +120,7 @@ return {
                 "kind": "TypeDiscriminator",
                 "abstractKey": "__isActor"
               },
+              (v0/*: any*/),
               {
                 "alias": null,
                 "args": null,
@@ -151,8 +152,7 @@ return {
                   (v1/*: any*/)
                 ],
                 "storageKey": null
-              },
-              (v0/*: any*/)
+              }
             ],
             "storageKey": null
           },
@@ -187,12 +187,12 @@ return {
     ]
   },
   "params": {
-    "cacheID": "ac27206c195006376378d612ca98bb4c",
+    "cacheID": "1d0c34378f785c51ac849012a764b61c",
     "id": null,
     "metadata": {},
     "name": "NewsfeedQuery",
     "operationKind": "query",
-    "text": "query NewsfeedQuery {\n  topStories {\n    id\n    ...StoryFragment\n  }\n}\n\nfragment ImageFragment_OxVt3 on Image {\n  url(width: 400)\n  altText\n}\n\nfragment ImageFragment_RvEVS on Image {\n  url(width: 60)\n  altText\n}\n\nfragment PosterBylineFragment on Actor {\n  __isActor: __typename\n  name\n  profilePicture {\n    ...ImageFragment_RvEVS\n  }\n}\n\nfragment StoryFragment on Story {\n  title\n  summary\n  createdAt\n  poster {\n    __typename\n    ...PosterBylineFragment\n    id\n  }\n  thumbnail {\n    ...ImageFragment_OxVt3\n  }\n}\n"
+    "text": "query NewsfeedQuery {\n  topStories {\n    id\n    ...StoryFragment\n  }\n}\n\nfragment ImageFragment_OxVt3 on Image {\n  url(width: 400)\n  altText\n}\n\nfragment ImageFragment_RvEVS on Image {\n  url(width: 60)\n  altText\n}\n\nfragment PosterBylineFragment on Actor {\n  __isActor: __typename\n  id\n  name\n  profilePicture {\n    ...ImageFragment_RvEVS\n  }\n}\n\nfragment StoryFragment on Story {\n  title\n  summary\n  createdAt\n  poster {\n    __typename\n    ...PosterBylineFragment\n    id\n  }\n  thumbnail {\n    ...ImageFragment_OxVt3\n  }\n}\n"
   }
 };
 })();
